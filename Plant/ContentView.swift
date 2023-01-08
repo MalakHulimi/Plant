@@ -41,7 +41,9 @@ struct ContentView: View {
                    // .padding(.leading,130)
 
                 }
-                Text("Name of Plant,111")
+                
+                //Add name of the plant
+                Text("Name of Plant, Cactus")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 
