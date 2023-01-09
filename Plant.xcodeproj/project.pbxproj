@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80173F78296C22470005D2F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80173F7A296C22470005D2F5 /* Localizable.strings */; };
 		809D9CD9296AE97100939186 /* PlantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D9CD8296AE97100939186 /* PlantApp.swift */; };
 		809D9CDB296AE97100939186 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D9CDA296AE97100939186 /* ContentView.swift */; };
 		809D9CDD296AE97200939186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809D9CDC296AE97200939186 /* Assets.xcassets */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80173F79296C22470005D2F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80173F7B296C22CE0005D2F5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		809D9CD5296AE97100939186 /* Plant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809D9CD8296AE97100939186 /* PlantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantApp.swift; sourceTree = "<group>"; };
 		809D9CDA296AE97100939186 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,9 +80,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80173F70296C21A00005D2F5 /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				80173F7A296C22470005D2F5 /* Localizable.strings */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
 		809D9CCC296AE97100939186 = {
 			isa = PBXGroup;
 			children = (
+				80173F70296C21A00005D2F5 /* Localizables */,
 				809D9CD7296AE97100939186 /* Plant */,
 				809D9CE8296AE97200939186 /* PlantTests */,
 				809D9CF2296AE97300939186 /* PlantUITests */,
@@ -224,6 +236,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 809D9CCC296AE97100939186;
 			packageReferences = (
@@ -246,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				809D9CE0296AE97200939186 /* Preview Assets.xcassets in Resources */,
+				80173F78296C22470005D2F5 /* Localizable.strings in Resources */,
 				809D9D08296B101000939186 /* 107998-energyshares-plant4.json in Resources */,
 				809D9CDD296AE97200939186 /* Assets.xcassets in Resources */,
 			);
@@ -310,11 +324,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		80173F7A296C22470005D2F5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80173F79296C22470005D2F5 /* en */,
+				80173F7B296C22CE0005D2F5 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		809D9CF7296AE97300939186 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -375,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

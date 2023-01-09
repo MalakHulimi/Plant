@@ -43,7 +43,7 @@ struct ContentView: View {
                 }
                 
                 //Add name of the plant
-                Text("Name of Plant, Cactus")
+                Text("Name of Plant")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 
@@ -73,8 +73,21 @@ struct ContentView: View {
 }
     
 
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
+
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+  static var previews: some View {
+    Group {
+      // 1
+      ContentView()
+        .environment(\.locale, .init(identifier: "en"))
+      // 2
+      ContentView()
+        .environment(\.locale, .init(identifier: "ar"))
     }
+  }
 }
